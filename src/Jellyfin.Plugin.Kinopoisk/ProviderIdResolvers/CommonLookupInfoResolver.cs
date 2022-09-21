@@ -9,7 +9,7 @@ namespace Jellyfin.Plugin.Kinopoisk.ProviderIdResolvers
     public class CommonLookupInfoResolver<T> : CommonResolver<T>
         where T : ItemLookupInfo
     {
-        private readonly Regex _kinopoiskIdRegex = new(@"kp-?(?<kinopoiskId>\d+)", RegexOptions.IgnoreCase | RegexOptions.Compiled);
+        private readonly Regex _kinopoiskIdRegex = new(@"(kp|kinopoisk)-?(?<kinopoiskId>\d+)", RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
         public CommonLookupInfoResolver(ILogger<CommonLookupInfoResolver<T>> logger)
             : base(logger)
