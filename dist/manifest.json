@@ -10,11 +10,11 @@
         "versions": [
             {
                 "version": "10.7.5.5",
-                "changelog": "Added kinopoisk-<kinopoisk-id> tag for files\n",
+                "changelog": "Added tag kinopoisk-12345 equal kp-12345\n",
                 "targetAbi": "10.7.0",
                 "sourceUrl": "https://raw.githubusercontent.com/dantedaemon/jellyfin-plugin-kinopoisk/master/dist/kinopoisk/kinopoisk_10.7.5.5.zip",
-                "checksum": "66038c67ab8ab4bdc0afd11344bbab00",
-                "timestamp": "2021-10-17T15:57:00Z"
+                "checksum": "6b643757838b569bc5f8a519cf18ed82",
+                "timestamp": "2022-09-22T20:24:43Z"
             },
             {
                 "version": "10.7.5.4",
