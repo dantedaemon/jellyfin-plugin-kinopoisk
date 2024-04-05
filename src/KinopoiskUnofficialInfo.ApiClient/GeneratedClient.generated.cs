@@ -3947,6 +3947,9 @@ namespace KinopoiskUnofficialInfo.ApiClient
     
         [System.Runtime.Serialization.EnumMember(Value = @"UNKNOWN")]
         UNKNOWN = 2,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"YANDEX_DISK")]
+        YANDEX_DISK = 3,
     
     }
 
