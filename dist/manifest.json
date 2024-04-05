@@ -9,6 +9,14 @@
         "imageUrl": "https://kinopoisk.userecho.com/s/attachments/28876/0/1/25f8c0315e6ccb2aa6c2642e48f2c9e9.png",
         "versions": [
             {
+                "version": "10.7.5.6",
+                "changelog": "Fixed YANDEX_DISK error\n",
+                "targetAbi": "10.7.0",
+                "sourceUrl": "https://raw.githubusercontent.com/dantedaemon/jellyfin-plugin-kinopoisk/master/dist/kinopoisk/kinopoisk_10.7.5.6.zip",
+                "checksum": "b8025e777cd1e7199175a65af1cb5815",
+                "timestamp": "2024-04-05T09:06:28Z"
+            },
+            {
                 "version": "10.7.5.5",
                 "changelog": "Added tag kinopoisk-12345 equal kp-12345\n",
                 "targetAbi": "10.7.0",
