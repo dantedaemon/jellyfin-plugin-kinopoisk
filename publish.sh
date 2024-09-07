@@ -11,14 +11,14 @@ check_command() {
 }
 
 # Check for required commands
-check_command gsed
+check_command sed
 
-brew link --overwrite dotnet@8
+#brew link --overwrite dotnet@8
 export PATH="/usr/local/opt/dotnet@8/bin:$PATH"
 
 find . -name project.assets.json -delete
 
-gsed -i'' "s/version: .*/version: \"$VERSION\"/" src/Jellyfin.Plugin.Kinopoisk/build.yaml
+sed -i'' "s/version: .*/version: \"$VERSION\"/" src/Jellyfin.Plugin.Kinopoisk/build.yaml
 BUILDYAML=`head -$(grep -n "changelog: >" src/Jellyfin.Plugin.Kinopoisk/build.yaml | head -1 | cut -d: -f1) src/Jellyfin.Plugin.Kinopoisk/build.yaml`
 echo -e "$BUILDYAML\n  $CHANGELOG" > src/Jellyfin.Plugin.Kinopoisk/build.yaml
 
@@ -55,7 +55,7 @@ jq --arg HASH "$HASH" --arg URL "https://raw.githubusercontent.com/dantedaemon/j
     '.[0].versions |= [{"version": $VERSION, "checksum": $HASH, "changelog": "new release", "name": "\u041a\u0438\u043d\u043e\u041f\u043e\u0438\u0441\u043a", "targetAbi": "10.9.0", "sourceUrl": $URL, "timestamp": $TIMESTAMP}] + .' \
     "$(pwd)/dist/manifest.json" > "$(pwd)/dist/manifest.json.tmp" && \
     mv "$(pwd)/dist/manifest.json.tmp" "$(pwd)/dist/manifest.json"
-exit
+#exit
 #jprm repo add -u https://raw.githubusercontent.com/dantedaemon/jellyfin-plugin-kinopoisk/master/dist/ ./dist ./artifacts/*.zip
 rm -rf ./artifacts/*
 git add "$RELEASEDIR.zip" "dist/manifest.json" "publish.sh" "src/Jellyfin.Plugin.Kinopoisk/build.yaml" && \
