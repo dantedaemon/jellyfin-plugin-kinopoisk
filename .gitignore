@@ -1,2 +1,5 @@
 src/*/bin/*
 src/*/obj/*
+.devcontainer
+.DS_Store
+.vscode
