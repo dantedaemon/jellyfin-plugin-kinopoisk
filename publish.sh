@@ -39,7 +39,7 @@ cat << EOF > "dist/kinopoisk/kinopoisk_$VERSION/meta.json"
     "imageUrl": "https://kinopoisk.userecho.com/s/attachments/28876/0/1/25f8c0315e6ccb2aa6c2642e48f2c9e9.png",
     "name": "\u041a\u0438\u043d\u043e\u041f\u043e\u0438\u0441\u043a",
     "overview": "\u0418\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f \u043e \u0444\u0438\u043b\u044c\u043c\u0430\u0445 \u0438 \u0441\u0435\u0440\u0438\u0430\u043b\u0430\u0445 \u0441 \u041a\u0438\u043d\u043e\u041f\u043e\u0438\u0441\u043a\u0430",
-    "owner": "svk",
+    "owner": "dantedaemon",
     "targetAbi": "10.9.0",
     "timestamp": "$(date -u "+%Y-%m-%dT%H:%M:%SZ")",
     "version": "$VERSION"
